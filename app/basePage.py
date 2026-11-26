@@ -1,4 +1,27 @@
+# IMPORTS
 import streamlit as st
+import streamlit.components.v1 as components
+
+st.set_page_config(
+    page_title="My App", 
+    page_icon="static/apple-touch-icon.png"
+    )
+
+components.html(
+    """
+    <script>
+    const doc = window.parent.document;
+    let link = doc.querySelector("link[rel='apple-touch-icon']");
+    if (!link) {
+        link = doc.createElement('link');
+        link.rel = 'apple-touch-icon';
+        doc.head.appendChild(link);
+    }
+    link.href = '/app/static/apple-touch-icon.png';
+    </script>
+    """,
+    height=0,
+)
 
 # --------------------------------
 # 1. DEFINE YOUR APPLICATION PAGES
