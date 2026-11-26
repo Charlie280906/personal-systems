@@ -14,6 +14,47 @@ st.set_page_config(page_title="Recipe Book", layout="wide")
 #     with st.expander("Image problems", expanded=True):
 #         st.json(st.session_state["image_errors"])
 
+# st.markdown("""
+# <style>
+# /* Force every bordered recipe card to exactly the same height */
+# [data-testid="stVerticalBlockBorderWrapper"] {
+#     height: 600px !important;
+#     min-height: 600px !important;
+#     max-height: 600px !important;
+#     box-sizing: border-box !important;
+#     overflow: hidden;
+# }
+
+# /* Let the content fill the card */
+# [data-testid="stVerticalBlockBorderWrapper"] > div {
+#     height: 100% !important;
+# }
+
+# /* Arrange card contents vertically */
+# [data-testid="stVerticalBlockBorderWrapper"] [data-testid="stVerticalBlock"] {
+#     height: 100% !important;
+#     display: flex !important;
+#     flex-direction: column !important;
+# }
+
+# /* Keep images consistent */
+# [data-testid="stImage"] img {
+#     height: 220px !important;
+#     object-fit: cover !important;
+# }
+
+# /* Reserve title space */
+# [data-testid="stVerticalBlockBorderWrapper"] h3 {
+#     min-height: 2.6em;
+# }
+
+# /* Push button to the bottom */
+# [data-testid="stVerticalBlockBorderWrapper"] [data-testid="stButton"] {
+#     margin-top: auto !important;
+# }
+# </style>
+# """, unsafe_allow_html=True)
+
 # PRE-MADE SELECT OPTIONS
 recipe_type_options = {
     "Breakfast" : "green", 
@@ -196,7 +237,7 @@ else:
             info = recipe_data[name]
             with column.container(border=True):
                 st.image(load_image(info["Image"], CARD_SIZE), use_container_width=True)
-                st.subheader(name)
+                st.write("##### " + name)
                 st.caption(
                     f"{info['Rating'] * '⭐️'}  ·  Serves {info['Serves']}  ·  "
                     f"{format_time(info['Prep & cook time'])}"
