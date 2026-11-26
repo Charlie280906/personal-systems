@@ -41,7 +41,7 @@ def createNew(type):
     if type == "qualification":
         qualification_title = st.text_input("Qualification name")
         qualification_date = st.text_input("When did you complete this")
-        if st.button("Add", icon="➕", type="primary"):
+        if st.button("Add", icon=":material/add:", type="primary"):
             cv_info_data["certificates/qualifications"]["options"].append([qualification_title, qualification_date])
             rewriteToJson()
             st.rerun()
@@ -51,7 +51,7 @@ def createNew(type):
         employment_date = st.text_input("Date range")
         employment_role = st.text_input("Role")
         employment_description = st.text_input("Description")
-        if st.button("Add", icon="➕", type="primary"):
+        if st.button("Add", icon=":material/add:", type="primary"):
             cv_info_data["employment"][employment_place] = {"dates" : employment_date, "role" : employment_role, "description" : employment_description}
             rewriteToJson()
             st.rerun()
@@ -61,7 +61,7 @@ def createNew(type):
         volunteering_date = st.text_input("Date range")
         volunteering_role = st.text_input("Role")
         volunteering_description = st.text_input("Description")
-        if st.button("Add", icon="➕", type="primary"):
+        if st.button("Add", icon=":material/add:", type="primary"):
             cv_info_data["work experience/volunteering"][volunteering_place] = {"dates" : volunteering_date, "role" : volunteering_role, "description" : volunteering_description}
             rewriteToJson()
             st.rerun()
@@ -174,13 +174,13 @@ with tab1:
     phone = st.selectbox("Phone number", cv_info_data["personal details"]["phone"], accept_new_options=True)
     email = st.text_input("Email", cv_info_data["personal details"]["email"])
     driving_license = st.multiselect("Driving Licenses", cv_info_data["personal details"]["driving licenses"])
-    save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_personal_information")
+    save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_personal_information")
 
 
 # MAIN CV INTRODUCTION TAB
 with tab2:
     main_introduction = st.text_area("This is the section that will sit under your name at the start of the CV...", cv_info_data["introduction"], height="content")
-    save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_introduction")
+    save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_introduction")
 
 
 # EDUCATION TAB
@@ -198,7 +198,7 @@ with tab3:
                 st.write("#### " + education.upper())
                 st.write("##### " + str(cv_info_data["education"][education]["dates"]))
                 st.text("\n".join(cv_info_data["education"][education]["subjects"]))
-    save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_education")
+    save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_education")
 
 # QUALIFICATIONS/CERTIFICATES TAB
 with tab4:
@@ -209,9 +209,9 @@ with tab4:
         qualification_checkbox_states[qualification[0]] = st.checkbox(label=label_text, key=f"todo_{qualification}")
     col1, col2 = st.columns(2)
     with col1:
-        create_button = st.button("Add new qualification", icon="➕", on_click=createNew, args=("qualification",), use_container_width=True, type="primary", key="add_qualification")
+        create_button = st.button("Add new qualification", icon=":material/add:", on_click=createNew, args=("qualification",), use_container_width=True, type="primary", key="add_qualification")
     with col2:
-        save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_qualification")
+        save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_qualification")
 
 with tab5:
     employment_checkbox_states = {}
@@ -228,9 +228,9 @@ with tab5:
                 st.text_area("", cv_info_data["employment"][employment]["description"], label_visibility="collapsed", height="content")
     col1, col2 = st.columns(2)
     with col1:
-        create_button = st.button("Add new employment", icon="➕", on_click=createNew, args=("employment",), use_container_width=True, type="primary", key="add_employment")
+        create_button = st.button("Add new employment", icon=":material/add:", on_click=createNew, args=("employment",), use_container_width=True, type="primary", key="add_employment")
     with col2:
-        save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_employemnt")
+        save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_employemnt")
 
 
 # WORK EXPERIENCE/VOLUNTEERING TAB
@@ -248,12 +248,12 @@ with tab6:
                 st.write("##### " + str(cv_info_data["work experience/volunteering"][we_v]["role"]).title() + " ----- " + str(
                     cv_info_data["work experience/volunteering"][we_v]["dates"]))
                 st.text_area("", cv_info_data["work experience/volunteering"][we_v]["description"], label_visibility="collapsed",
-                             height="content")
+                            height="content")
     col1, col2 = st.columns(2)
     with col1:
-        create_button = st.button("Add new volunteering", icon="➕", on_click=createNew, args=("volunteering",), use_container_width=True, type="primary", key="add_volunteering")
+        create_button = st.button("Add new volunteering", icon=":material/add:", on_click=createNew, args=("volunteering",), use_container_width=True, type="primary", key="add_volunteering")
     with col2:
-        save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_volunteering")
+        save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_volunteering")
 
 
 # REFERENCES TAB
@@ -264,19 +264,19 @@ with tab7:
 # SKILLS TAB
 with tab8:
     skills = st.multiselect("Skills", cv_info_data["skills"], accept_new_options=True)
-    save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_skills")
+    save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_skills")
 
 
 # HOBBIES TAB
 with tab9:
     free_time = st.multiselect("Interests/hobbies", cv_info_data["interests/hobbies"], accept_new_options=True)
-    save_button = st.button("Save this section", icon="💾", on_click=saveData, use_container_width=True, key="save_hobbies")
+    save_button = st.button("Save this section", icon=":material/save:", on_click=saveData, use_container_width=True, key="save_hobbies")
 
 
 # SUBMIT
 with tab10:
     st.info("Ensure all information is correct before clicking the button below!")
-    createCV = st.button("Create CV", use_container_width=True, type="primary")
+    createCV = st.button("Create CV", use_container_width=True, type="primary", icon=":material/design_services:")
 
     if createCV:
         with st.spinner("Building your CV..."):
