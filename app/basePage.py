@@ -1,15 +1,13 @@
+# IMPORTS
 import streamlit as st
 
-# --------------------------------
-# 1. DEFINE YOUR APPLICATION PAGES
-# --------------------------------
 
-# TODO: add material icons to page icons
+# DEFINE YOUR APPLICATION PAGES
 pages = [
-    st.Page("homePage.py", title="Home", icon="🏠"),
-    st.Page("brainBoard.py", title="Brain Board", icon="🧠"),
-    st.Page("recipeBook.py", title="Recipe Book", icon="🍽️"),
-    st.Page("cvBuilder.py", title="CV Builder", icon="📝")
+    st.Page("homePage.py", title="Home", icon=":material/home:"),
+    st.Page("brainBoard.py", title="Brain Board", icon=":material/developer_board:"),
+    st.Page("recipeBook.py", title="Recipe Book", icon=":material/kitchen:"),
+    st.Page("cvBuilder.py", title="CV Builder", icon=":material/work_history:")
 ]
 
 
@@ -66,7 +64,7 @@ with col2:
 
 st.sidebar.button(
     "Log out", use_container_width=True,
-    on_click=st.logout
+    on_click=st.logout, icon=":material/logout:"
 )
 
 

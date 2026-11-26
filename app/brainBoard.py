@@ -1,5 +1,3 @@
-# TODO: get this on a git repo and have -v control working
-
 # IMPORTS
 import streamlit as st
 from pathlib import Path
