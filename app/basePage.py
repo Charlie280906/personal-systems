@@ -4,7 +4,6 @@ import streamlit as st
 # 1. DEFINE YOUR APPLICATION PAGES
 # --------------------------------
 
-# TODO: do this tyest>?>?>
 # TODO: add material icons to page icons
 pages = [
     st.Page("homePage.py", title="Home", icon="🏠"),

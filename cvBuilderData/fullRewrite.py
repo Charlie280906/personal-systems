@@ -424,18 +424,40 @@ def get_service(credentials_file, token_file):
     from google_auth_oauthlib.flow import InstalledAppFlow
     from googleapiclient.discovery import build
 
+    # Check if running inside Streamlit with secrets configured
+    secrets = {}
+    try:
+        import streamlit as st
+        if "google_token" in st.secrets:
+            secrets = st.secrets
+    except Exception:
+        pass
+
     creds = None
-    if os.path.exists(token_file):
+    if "google_token" in secrets:
+        creds = Credentials.from_authorized_user_info(dict(secrets["google_token"]), SCOPES)
+    elif os.path.exists(token_file):
         creds = Credentials.from_authorized_user_file(token_file, SCOPES)
+
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(credentials_file, SCOPES)
+            if "google_credentials" in secrets:
+                flow = InstalledAppFlow.from_client_config(
+                    {"installed": dict(secrets["google_credentials"])}, SCOPES
+                )
+            else:
+                flow = InstalledAppFlow.from_client_secrets_file(credentials_file, SCOPES)
             creds = flow.run_local_server(port=0)
-        with open(token_file, "w") as f:
-            f.write(creds.to_json())
+
+        # Only write back to token.json when running locally (not via st.secrets)
+        if "google_token" not in secrets:
+            with open(token_file, "w") as f:
+                f.write(creds.to_json())
+
     return build("docs", "v1", credentials=creds)
+
 
 
 def parse_doc_id(s):
