@@ -8,7 +8,7 @@ import streamlit as st
 pages = [
     st.Page("homePage.py", title="Home", icon="🏠"),
     st.Page("brainBoard.py", title="Brain Board", icon="🧠"),
-    # st.Page("recipeBook.py", title="Recipe Book", icon="🍽️"),
+    st.Page("recipeBook.py", title="Recipe Book", icon="🍽️"),
     st.Page("cvBuilder.py", title="CV Builder", icon="📝")
 ]
 
