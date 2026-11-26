@@ -1,0 +1,76 @@
+{
+    "personal details": {
+        "name": "Charlie Solk",
+        "location": "York, UK",
+        "phone": "+44 7400 920912",
+        "email": "charliesolk28@gmail.com",
+        "driving licenses": []
+    },
+    "introduction": "Being in my first year out of education, I have gone on to work as a full-time ski instructor out in Canada, travelled from East to West on a once-in-a-lifetime journey, before settling down to work at a zipline business over in East Kootenay. My ultimate career goal is to become a qualified pilot, and I am particularly drawn to hands-on, practical training that allows me to apply my learning directly to my performance. I thrive both independently and in team settings, adapting well to different environments and challenges.",
+    "education": {
+        "a-levels": {
+            "title": "A-Levels - Tadcaster Grammar School",
+            "dates": "September 2023 - June 2025",
+            "subjects": [
+                "Computer Science - A",
+                "Mathematics - A",
+                "Physics - B",
+                "Extended Project Qualification - B"
+            ]
+        },
+        "gcses": {
+            "title": "GCSEs - Tadcaster Grammar School",
+            "dates": "September 2018 - June 2023",
+            "subjects": [
+                "10 GCSEs with grades ranging from 6 - 9, with English (8) and Mathematics (8)"
+            ]
+        }
+    },
+    "certificates/qualifications": {
+        "intro": "I have earned certificates and qualifications outside of my formal education to support my volunteering commitments. In addition,  have achieved my Duke of Edinburgh Awards, which have significantly contributed to my personal development, teamwork abilities and practical skills that I can bring into the workplace.",
+        "options": [
+            [
+                "EASA Class 1 Medical License",
+                "2026"
+            ]
+        ]
+    },
+    "employment": {
+        "valley zipline adventures": {
+            "dates": "JUNE 2026 - OCTOBER 2026",
+            "role": "adventure guide",
+            "description": "Whilst being at this job, my daily routine would consist of starting the day by checking my own harness along with the gear we use fo guests, being thorough to ensure they are kept safe at all times Throughout the day, I would need to be adaptable as I would switch between zipline tours, aerial park supervision and adventure zon activities. Each of these would require me to memorise orientation for each aspect, especially the zipline tour where keeping th environment safe, whilst keeping the guests excited, engaged an the tour at a good pace. The job involved meeting new people ever day, and having to quickly create professional relationships wit them so you could maintain key group management as well a making it a memorable experience for guests of ages 98 all the wa to 2 \u00bd."
+        }
+    },
+    "work experience/volunteering": {
+        "acorn event structures": {
+            "dates": "JULY 2023 - JULY 2023",
+            "role": "Work experience",
+            "description": "My duties in the Accounts Department included admin-based task such as emailing invoices and scanning tasks. I also undertook th confirmation of financial transactions used by company cards, a well as resolving issues that arise with these."
+        }
+    },
+    "references": "References are available upon request.",
+    "skills": [
+        "Organisation",
+        "Trustworthy",
+        "Independence",
+        "Communication",
+        "Reliability",
+        "Patience",
+        "Leadership",
+        "Professionalism",
+        "Customer service",
+        "Approachability",
+        "Adaptability",
+        "Problem solving",
+        "Empathetic",
+        "Team player",
+        "Public speaking",
+        "Responsibility",
+        "Commitment",
+        "Innovative"
+    ],
+    "interests/hobbies": [
+        "Skiing"
+    ]
+}

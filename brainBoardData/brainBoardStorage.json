@@ -1,0 +1,23 @@
+{
+  "categories": {
+    "Health" : {
+      "colour" : "#8EE0B1",
+      "items" : ["meals"]
+    },
+    "People" : {
+      "colour" : "#FFA3BE",
+      "items" : ["dates"]
+    }
+  },
+  "dates" : [],
+  "meals" : {
+    "Mon" : "",
+    "Tue" : "",
+    "Wed" : "",
+    "Thu" : "",
+    "Fri" : "",
+    "Sat" : "",
+    "Sun" : "",
+    "Notes" : ""
+  }
+}

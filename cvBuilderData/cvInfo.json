@@ -1,0 +1,144 @@
+{
+    "personal details": {
+        "name": "Charlie Solk",
+        "location": [
+            "York, UK",
+            "QC, Canada",
+            "BC, Canada"
+        ],
+        "phone": [
+            "+44 7400 920912",
+            "+1 (438)-354-3607"
+        ],
+        "email": "charliesolk28@gmail.com",
+        "driving licenses": [
+            "B",
+            "BE"
+        ]
+    },
+    "introduction": "Being in my first year out of education, I have gone on to work as a full-time ski instructor out in Canada, travelled from East to West on a once-in-a-lifetime journey, before settling down to work at a zipline business over in East Kootenay. My ultimate career goal is to become a qualified pilot, and I am particularly drawn to hands-on, practical training that allows me to apply my learning directly to my performance. I thrive both independently and in team settings, adapting well to different environments and challenges.",
+    "education": {
+        "a-levels": {
+            "title": "A-Levels - Tadcaster Grammar School",
+            "dates": "September 2023 - June 2025",
+            "subjects": [
+                "Computer Science - A",
+                "Mathematics - A",
+                "Physics - B",
+                "Extended Project Qualification - B"
+            ]
+        },
+        "gcses": {
+            "title": "GCSEs - Tadcaster Grammar School",
+            "dates": "September 2018 - June 2023",
+            "subjects": [
+                "10 GCSEs with grades ranging from 6 - 9, with English (8) and Mathematics (8)"
+            ]
+        }
+    },
+    "certificates/qualifications": {
+        "intro": "I have earned certificates and qualifications outside of my formal education to support my volunteering commitments. In addition,  have achieved my Duke of Edinburgh Awards, which have significantly contributed to my personal development, teamwork abilities and practical skills that I can bring into the workplace.",
+        "options": [
+            [
+                "EASA Class 1 Medical License",
+                "2026"
+            ],
+            [
+                "CSIA Level 2 Ski Instruction Licence",
+                "2026"
+            ],
+            [
+                "CSIA Level 1 Ski Instruction Licence",
+                "2025"
+            ],
+            [
+                "UK CAA Class 1 Medical Licence",
+                "2024"
+            ],
+            [
+                "Level 3 Emergency Outdoor First Aid Action Course",
+                "2024"
+            ],
+            [
+                "Paddlesport Safety & Rescue Course",
+                "2023"
+            ],
+            [
+                "Duke Of Edinburgh Silver Award",
+                "2022"
+            ],
+            [
+                "Duke Of Edinburgh Bronze Award",
+                "2021"
+            ],
+            [
+                "Micro1 reviewer",
+                "2026"
+            ]
+        ]
+    },
+    "employment": {
+        "valley zipline adventures": {
+            "dates": "JUNE 2026 - OCTOBER 2026",
+            "role": "adventure guide",
+            "description": "Whilst being at this job, my daily routine would consist of starting the day by checking my own harness along with the gear we use fo guests, being thorough to ensure they are kept safe at all times Throughout the day, I would need to be adaptable as I would switch between zipline tours, aerial park supervision and adventure zon activities. Each of these would require me to memorise orientation for each aspect, especially the zipline tour where keeping th environment safe, whilst keeping the guests excited, engaged an the tour at a good pace. The job involved meeting new people ever day, and having to quickly create professional relationships wit them so you could maintain key group management as well a making it a memorable experience for guests of ages 98 all the wa to 2 \u00bd."
+        },
+        "le massif de charlevoix": {
+            "dates": "DECEMBER 2025 - APRIL 2026",
+            "role": "Full-time Ski Instructor",
+            "description": "This is a role that requires me to maintain safety as my main priority throughout the day - even with changes in weather, slop conditions, and energy levels of the group. With the groups I teach changing daily, it pushes me to be easily adaptable with m coaching styles between adults, children and private one-to-on lessons. Following procedures is key to my employer as it ensure the safety and accountability of all those taking part in grou lessons."
+        },
+        "morrisons": {
+            "dates": "MARCH 2023 - NOVEMBER 2025",
+            "role": "Part-time Customer Assistant",
+            "description": "In my role, I demonstrate flexibility with a range of tasks I undertake During shifts, I am regularly asked to take on a Team Leader role delegating tasks effectively to colleagues to ensure smoot operations. As customer satisfaction is central to my employee ethos, I constantly strive to go above and beyond to deliver exceptional service and create a positive experience for ever customer."
+        }
+    },
+    "work experience/volunteering": {
+        "acorn event structures": {
+            "dates": "JULY 2023 - JULY 2023",
+            "role": "Work experience",
+            "description": "My duties in the Accounts Department included admin-based task such as emailing invoices and scanning tasks. I also undertook th confirmation of financial transactions used by company cards, a well as resolving issues that arise with these."
+        },
+        "copmanthorpe childcare centre": {
+            "dates": "APRIL 2021 - MARCH 2022",
+            "role": "Volunteering",
+            "description": "Whilst volunteering here, I needed to use my team communication skills to interact and support colleagues with tasks such a maintaining the cleanliness of the centre and helping to ensure th environment is safe and stimulating. In this role, I also spent muc time engaging with children between the ages of 1 and 4."
+        },
+        "tadcaster grammar school": {
+            "dates": "JUNE 2024 - MAY 2025",
+            "role": "head student",
+            "description": "Throughout my time at TGS, I have always been an active member of the Student Council. In my final year, I ran for Head Student an was appointed to the role, which includes sharing of Student Council meetings, speaking at Open Mornings and primary school tours, meeting with key members of staff and aiming to a accurately as possible represent the views of the student body."
+        }
+    },
+    "references": "References are available upon request.",
+    "skills": [
+        "Trustworthy",
+        "Independence",
+        "Communication",
+        "Reliability",
+        "Organisation",
+        "Patience",
+        "Leadership",
+        "Professionalism",
+        "Customer service",
+        "Approachability",
+        "Adaptability",
+        "Problem solving",
+        "Empathetic",
+        "Team player",
+        "Public speaking",
+        "Responsibility",
+        "Commitment",
+        "Innovative"
+    ],
+    "interests/hobbies": [
+        "Aviation",
+        "Computing",
+        "Fitness",
+        "Kayaking",
+        "Skiing",
+        "Socialising with friends",
+        "Hiking"
+    ]
+}

@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#2563EB"          # Vibrant cobalt blue for an active, productive feel
+backgroundColor="#F8FAFC"       # Clean ice-white canvas with a touch of blue
+secondaryBackgroundColor="#E2E8F0" # Soft slate gray for the sidebar and structural blocks
+textColor="#0F172A"             # Dark slate text for maximum contrast
+font="sans serif"
