@@ -26,7 +26,9 @@ HERO_SIZE = (1000, 800)   # 5:4 for the detail view
 GRID_COLUMNS = 3
 
 # LOADING THE RECIPE DATA JSON FILE
-recipe_data_file_path = Path("../recipeBookData") / "recipes.json"
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+recipe_data_file_path = ROOT_DIR / "recipeBookData" / "recipes.json"
 with open(recipe_data_file_path, "r") as recipe_data_file:
     recipe_data = json.load(recipe_data_file)
 
