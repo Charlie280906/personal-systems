@@ -12,7 +12,9 @@ st.set_page_config(
 )
 
 # LOADING THE BOARD DATA JSON FILE
-board_data_file_path = Path("../brainBoardData") / "brainBoardStorage.json"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+board_data_file_path = ROOT_DIR / "brainBoardData" / "brainBoardStorage.json"
+
 with open(board_data_file_path, 'r') as board_data_file:
     board_data = json.load(board_data_file)
 

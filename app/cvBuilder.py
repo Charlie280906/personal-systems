@@ -140,13 +140,16 @@ st.title("My CV Builder")
 
 
 # LOADING THE TEMPLATE SO WE CAN STORE INFO AS WE GO
-cv_data_file_path_template = Path("../cvBuilderData") / "cvTemplate.json"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+cv_data_file_path_template = ROOT_DIR / "cvBuilderData" / "cvTemplate.json"
+
 with open(cv_data_file_path_template, 'r') as cv_template_file:
     cv_template_data = json.load(cv_template_file)
 
 
 # LOADING IN DATA FROM CVINFO.JSON
-cv_data_file_path_info = Path("../cvBuilderData") / "cvInfo.json"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+cv_data_file_path_info = ROOT_DIR / "cvBuilderData" / "cvInfo.json"
 with open(cv_data_file_path_info, 'r') as cv_info_file:
     cv_info_data = json.load(cv_info_file)
 
